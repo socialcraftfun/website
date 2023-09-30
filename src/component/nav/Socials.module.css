@@ -1,0 +1,30 @@
+.popoverButton {
+    @apply
+    flex
+    items-center
+    text-base
+    font-medium
+    transition
+    hover:text-blue-600
+}
+
+.popoverPanel {
+    @apply
+    absolute
+    z-10
+    w-52
+    -left-12
+    py-1
+    mt-3
+    origin-top
+    overflow-hidden
+    rounded-lg
+    border-2
+    border-gray-700
+    bg-gray-800
+}
+
+.popoverLink {
+    @apply
+    text-gray-100 hover:bg-gray-700 flex w-full px-4 py-2 text-sm leading-5 text-left transition outline-none font-medium gap-2
+}

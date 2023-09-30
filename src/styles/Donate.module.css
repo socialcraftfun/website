@@ -1,0 +1,130 @@
+.parent {
+  @apply container mx-auto flex flex-col gap-5 px-6;
+}
+
+.title {
+  @apply pb-8 text-2xl font-bold;
+}
+
+.donate {
+  @apply flex flex-col gap-5
+  ;
+}
+
+.category {
+  @apply flex 
+	h-16 
+	justify-around 
+	gap-5;
+}
+
+.info {
+  @apply flex
+	flex-row
+	items-stretch
+	gap-5
+	;
+}
+
+.leftSide {
+	@apply flex
+	w-96
+	h-[520px]
+	flex-col
+	gap-3 
+	overflow-y-auto;
+}
+
+.rightSide {
+	@apply
+	w-full
+	h-[520px]
+}
+
+.item {
+  @apply 
+	items-center 
+	rounded-2xl 
+	border-2 
+	border-indigo-500 
+	bg-indigo-900/10
+}
+
+.categoryItem {
+  @apply item
+	flex
+	w-full 
+	text-2xl 
+	justify-center
+    cursor-pointer
+    hover:bg-blue-700/50
+    transition
+	font-semibold;
+}
+
+.donateItem {
+  @apply item
+	flex
+	w-full
+	justify-between
+	text-xl
+	min-h-[5rem]
+	px-2
+	py-4
+	cursor-pointer
+	hover:bg-blue-700/50
+	transition;
+}
+
+.active {
+	@apply 
+	bg-emerald-600
+}
+
+.previewItem {
+	@apply item
+	flex
+	flex-col
+	h-full
+}
+
+.price {
+  @apply flex
+	items-center
+	gap-1
+	font-semibold;
+}
+
+.price::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  background-color: #fff;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.formControl {
+	@apply
+	block
+	appearance-none
+	rounded-lg
+	border-none
+	px-4
+	py-2.5
+	transition
+	focus:outline-none
+	ring-1
+	ring-inset
+	focus:ring-2
+	focus:ring-inset
+	focus:ring-emerald-400
+	bg-zinc-800
+	focus:bg-zinc-900
+	ring-zinc-100/20
+	hover:ring-zinc-100/25
+	text-zinc-100
+	placeholder:text-zinc-500
+}
+

@@ -1,0 +1,72 @@
+.panel {
+    @apply
+    transform
+    transition-all
+    /* Размеры (flex растягивает)*/
+    max-w-4xl
+    w-full
+    p-5
+    /* Внешний вид */
+    bg-zinc-800
+    ring-1
+    ring-inset
+    ring-zinc-700/75
+    shadow-xl
+    rounded-lg
+    m-5
+}
+
+.title {
+    @apply
+    flex
+    justify-between
+    items-center
+    text-lg
+    pb-4
+}
+
+.title button {
+    @apply
+        /*Сместить из контейнера вправо*/
+        -m-3
+    h-10
+    w-10
+    grid
+    place-items-center
+    rounded-full
+    transition
+    hover:bg-zinc-200/25
+}
+
+.listGroup {
+
+}
+
+.listGroupItem {
+    @apply
+        px-0 py-3;
+    border: solid #495057;
+    border-width: 0 0 1px;
+    color: #adb5bd;
+}
+
+.listGroupItem:last-child {
+    border-bottom: 0;
+}
+
+.formCheck {
+    @apply
+    flex
+    gap-2
+}
+
+.formCheck input {
+    margin-bottom: auto;
+    margin-top: .3rem;
+    float: left;
+}
+
+.labelImage {
+    @apply
+    flex justify-between items-center max-h-full object-contain
+}
