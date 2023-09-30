@@ -9,7 +9,7 @@ import Logo from '../../assets/image/logo.png';
 export function Navigation() {
 
 	return (
-		<nav className="fixed z-50 flex h-16 w-full select-none items-center border-b border-transparent">
+		<nav className="fixed z-50 flex h-16 w-full select-none items-center border-b-0 border-transparent backdrop-filter backdrop-blur-lg opacity-90 bg-gradient-to-b from-neutral-900">
 			<div className="container px-6 mx-auto grid grid-cols-[1fr_auto_1fr] items-center gap-6">
 				<div className="flex items-center justify-start">
 					<a className="block" href="/" aria-label="На главную страницу">
