@@ -17,7 +17,8 @@ export function Navigation() {
 					</a>
 				</div>
 				
-				<ul className="lg:flex place-items-center gap-3.5 lg:text-sm xl:text-base">
+				<ul className="lg:flex place-items-center gap-3.5 lg:text-sm xl:text-base sm:flex mt-16 sm:mt-0"
+				>
 					<NavItem element={<Link value={{title: "Главная", link: "/"}}/>}/>
 					<NavItem element={<Link value={{title: "Форум", link: "/forum"}}/>}/>
 					<NavItem element={<Link value={{title: "Правила", link: "/forum/rules"}}/>}/>
